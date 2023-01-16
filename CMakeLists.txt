@@ -6,7 +6,7 @@ set(CMAKE_GENERATOR "Ninja")
 
 #set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake_module) # added by huicanlin
 # set(OpenCV_DIR "/home/huicanlin/Downloads/software/opencv-3.2.0/local/share/OpenCV/")
-find_package(OpenCV 4.2.0 REQUIRED)
+find_package(OpenCV 4 REQUIRED)
 # message("\n\n---- FOUND OpenCV Headers at\n\"${OpenCV_INCLUDE_DIRS}\"")
 # message("---- FOUND OpenCV Libs at\n\"${OpenCV_LIBS}\"")
 
@@ -21,7 +21,7 @@ find_package(catkin REQUIRED COMPONENTS
         message_filters
         )
 
-set(STEREO_DSO_PATH ${PROJECT_SOURCE_DIR}/../stereo-dso)
+set(STEREO_DSO_PATH "/home/ubuntu/dev/stereo_dso")
 message("\n\n---- LOOKING FOR STEREO_DSO at\n\"${STEREO_DSO_PATH}\"")
 
 

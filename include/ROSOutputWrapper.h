@@ -35,7 +35,7 @@ namespace dso
     public:
         ROSOutputWrapper();
 
-        virtual void publishInitSignal() override;
+        virtual void publishInitSignal() /**override**/;
 
         virtual void publishCamPose(dso::FrameShell *frame, dso::CalibHessian *HCalib) override;
 
